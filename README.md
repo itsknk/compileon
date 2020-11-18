@@ -30,7 +30,7 @@ First install the compilers required.
     });    
 ```
 **Note:** As compiling is same for Java in either of the OS can select option any while using it.
-<h5>For ava with user-input</h5>
+<h5>For Java with user-input</h5>
 
 ```javascript
     //if windows  
