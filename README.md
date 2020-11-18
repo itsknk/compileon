@@ -44,6 +44,10 @@ First install the compilers required.
 Now after installing the SDK and the npm packaga, this can be used in any online editor/compiler by making a front-end.
 Examples coming soon.
 
+## Further Updates
+1. Have to add compilers for other languages - C, C++, Python.
+2. Have to add Examples.
+
 ## Contributing
 - Fork it and then do the changes or else download the zip file, test to make sure nothing is going sideways.
 - Make a pull request with a detailed explanation. 
