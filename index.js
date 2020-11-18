@@ -15,6 +15,7 @@ initialize = function(option)
             exports.stats = true;
         }
     }
+    //creating a directory for compiled files
     fs.exists('./files', function(exists){
         if(!exists)
         {
