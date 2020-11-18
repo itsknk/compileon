@@ -1,0 +1,30 @@
+{
+  "name": "compileon",
+  "version": "0.1.0",
+  "description": "Makes building online compilers easy",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsknk/compileon.git"
+  },
+  "keywords": [
+    "compiler",
+    "online-compiler",
+    "npm"
+  ],
+  "author": "Kishore Karanam <kishorekaranam99@gmail.>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/itsknk/compileon/issues"
+  },
+  "homepage": "https://github.com/itsknk/compileon",
+  "dependencies": {
+    "cuid": "^2.1.8"
+  }
+}
