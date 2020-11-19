@@ -18,7 +18,7 @@ $ npm install -g compileon
 First install the compilers required.
 1. For Java, install the JAVA SDK.
 
-<h5>For Java:</h5>
+<h5>Without Input:</h5>
 
 ```javascript
     //if windows  
@@ -29,8 +29,8 @@ First install the compilers required.
         res.send(data);
     });    
 ```
-**Note:** As compiling is same for Java in either of the OS can select option any while using it.
-<h5>For Java with user-input</h5>
+**Note:** As compiling is same for Java in either of the OS can select either of the OS while using it.
+<h5>With Input:</h5>
 
 ```javascript
     //if windows  
