@@ -1,4 +1,5 @@
 # compileon
+[![GitHub license](https://img.shields.io/github/license/itsknk/compileon)](https://github.com/itsknk/compileon/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/itsknk/compileon)](https://github.com/itsknk/compileon/issues)
 
 Makes building online compilers easy.
