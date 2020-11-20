@@ -2,6 +2,7 @@ var fs = require('fs');
 var cuid = require('cuid');
 var exec = require('child_process').exec;
 var javaCompiler = require('./lib/javaC');
+var pythonCompiler = require('./lib/pythonC');
 
 exports.stats = false;
 
@@ -42,6 +43,22 @@ compileWithInput = function(envData, code, inp, fun)
     javaCompiler.compileWithInput(envData, code, inp, fun);
 }
 
+executePython = function(envData, code, fun)
+{
+    if(exports.stats)
+        pythonCompiler.stats = true;
+    pythonCompiler.executePython(envData, code, fun);
+}
+
+executeWithInput = function(envData, code, inp, fun)
+{
+    if(exports.stats)
+        pythonCompiler.stats = true;
+    pythonCompiler.executeWithInput(envData, code, inp, fun);
+}
+
 exports.initialize = this.initialize;
 exports.javaCompile = this.javaCompile;
 exports.compileWithInput = this.compileWithInput;
+exports.executePython = this.executePython;
+exports.executeWithInput = this.executeWithInput;
