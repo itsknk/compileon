@@ -17,7 +17,7 @@ $ npm install -g compileon
 
 ## Usage
 First install the compilers required.
-1. For Java, install the JAVA SDK.
+1. For Java, install the <a href="https://www.oracle.com/in/java/technologies/javase-downloads.html"> JAVA SDK </a>.
 
 <h5>Without Input:</h5>
 
@@ -42,11 +42,34 @@ First install the compilers required.
         res.send(data);
     });
 ```
-Now after installing the SDK and the npm packaga, this can be used in any online editor/compiler by making a front-end.
-Examples coming soon.
+1. For python, install <a href="https://www.python.org/downloads/"> python</a>.
+
+<h5>Without Input:</h5>
+
+```javascript
+    //if windows  
+    var envData = { OS : "windows"}; 
+    //else
+    var envData = { OS : "linux" };
+    compiler.compilePython( envData , code , function(data){
+        res.send(data);
+    });    
+```
+**Note:** As compiling is same for Python in either of the OS can select either of the OS while using it.
+<h5>With Input:</h5>
+
+```javascript
+    //if windows  
+    var envData = { OS : "windows"}; 
+    //else
+    var envData = { OS : "linux" };
+    compiler.compilePythonWithInput( envData , code , input ,  function(data){
+        res.send(data);
+    });
+```
 
 ## Further Updates
-1. Have to add compilers for other languages - C, C++, Python.
+1. Have to add compilers for other languages - C, C++.
 2. Have to add Examples.
 
 ## Contributing
