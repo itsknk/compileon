@@ -26,7 +26,7 @@ First install the compilers required.
     var envData = { OS : "windows"}; 
     //else
     var envData = { OS : "linux" };
-    compiler.compileJava( envData , code , function(data){
+    compiler.javaCompile( envData , code , function(data){
         res.send(data);
     });    
 ```
@@ -38,7 +38,7 @@ First install the compilers required.
     var envData = { OS : "windows"}; 
     //else
     var envData = { OS : "linux" };
-    compiler.compileJavaWithInput( envData , code , input ,  function(data){
+    compiler.compileWithInput( envData , code , input ,  function(data){
         res.send(data);
     });
 ```
@@ -51,7 +51,7 @@ First install the compilers required.
     var envData = { OS : "windows"}; 
     //else
     var envData = { OS : "linux" };
-    compiler.compilePython( envData , code , function(data){
+    compiler.executePython( envData , code , function(data){
         res.send(data);
     });    
 ```
@@ -63,7 +63,7 @@ First install the compilers required.
     var envData = { OS : "windows"}; 
     //else
     var envData = { OS : "linux" };
-    compiler.compilePythonWithInput( envData , code , input ,  function(data){
+    compiler.executeWithInput( envData , code , input ,  function(data){
         res.send(data);
     });
 ```
