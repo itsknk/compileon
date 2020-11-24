@@ -57,8 +57,8 @@ executeWithInput = function(envData, code, inp, fun)
     pythonCompiler.executeWithInput(envData, code, inp, fun);
 }
 
-exports.initialize = this.initialize;
-exports.javaCompile = this.javaCompile;
-exports.compileWithInput = this.compileWithInput;
-exports.executePython = this.executePython;
-exports.executeWithInput = this.executeWithInput;
+exports.initialize = initialize;
+exports.javaCompile = javaCompile;
+exports.compileWithInput = compileWithInput;
+exports.executePython = executePython;
+exports.executeWithInput = executeWithInput;
