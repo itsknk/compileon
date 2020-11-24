@@ -17,14 +17,14 @@ initialize = function(option)
         }
     }
     //creating a directory for compiled files
-    fs.exists('./files', function(exists){
+    fs.exists('./temp', function(exists){
         if(!exists)
         {
             if(exports.stats)
             {
                 console.log("Files folder created");
             }
-            fs.mkdirSync('./files');
+            fs.mkdirSync('./temp');
         }
     });
 }
@@ -43,18 +43,18 @@ compileWithInput = function(envData, code, inp, fun)
     javaCompiler.compileWithInput(envData, code, inp, fun);
 }
 
-executePython = function(envData, code, fun)
+executePython = function(envData, code, fn)
 {
     if(exports.stats)
         pythonCompiler.stats = true;
-    pythonCompiler.executePython(envData, code, fun);
+    pythonCompiler.executePython(envData, code, fn);
 }
 
-executeWithInput = function(envData, code, inp, fun)
+executeWithInput = function(envData, code, input, fn)
 {
     if(exports.stats)
         pythonCompiler.stats = true;
-    pythonCompiler.executeWithInput(envData, code, inp, fun);
+    pythonCompiler.executeWithInput(envData, code, input, fn);
 }
 
 exports.initialize = initialize;
