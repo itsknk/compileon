@@ -1,6 +1,7 @@
 # compileon
 [![GitHub license](https://img.shields.io/github/license/itsknk/compileon)](https://github.com/itsknk/compileon/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/itsknk/compileon)](https://github.com/itsknk/compileon/issues)
+[![npm version](https://badge.fury.io/js/compileon.svg)](https://badge.fury.io/js/compileon)
 
 Makes building online compilers easy.
 
@@ -42,7 +43,7 @@ First install the compilers required.
         res.send(data);
     });
 ```
-1. For python, install <a href="https://www.python.org/downloads/"> python</a>.
+2. For python, install <a href="https://www.python.org/downloads/"> python</a>.
 
 <h5>Without Input:</h5>
 
