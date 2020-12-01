@@ -1,6 +1,6 @@
 {
   "name": "compileon",
-  "version": "0.7.5",
+  "version": "0.8.5",
   "description": "Makes building online compilers easy",
   "main": "index.js",
   "directories": {
