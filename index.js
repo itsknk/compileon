@@ -1,8 +1,7 @@
 var fs = require('fs');
-var cuid = require('cuid');
-var exec = require('child_process').exec;
 var javaCompiler = require('./lib/javaC');
 var pythonCompiler = require('./lib/pythonC');
+var cppCompiler = require('./lib/cC');
 
 exports.stats = false;
 
@@ -57,8 +56,22 @@ executeWithInput = function(envData, code, input, fn)
     pythonCompiler.executeWithInput(envData, code, input, fn);
 }
 
+cppCompile = function ( envData ,  code , fn ){
+	if(exports.stats)
+		cppCompiler.stats = true;
+	cppModule.cppCompile(envData , code , fn );
+}
+
+cppcompileWithInput = function ( envData , code , input ,  fn ) { 
+	if(exports.stats)
+		cppCompiler.stats = true;
+	cppModule.cppcompileWithInput(envData , code , input , fn );	
+}
+
 exports.initialize = initialize;
 exports.javaCompile = javaCompile;
 exports.compileWithInput = compileWithInput;
 exports.executePython = executePython;
 exports.executeWithInput = executeWithInput;
+exports.cppCompile = cppCompile;
+exports.cppcompileWithInput = cppcompileWithInput;
