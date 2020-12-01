@@ -68,7 +68,7 @@ First install the compilers required.
         res.send(data);
     });
 ```
-3. For CPP, install <a href="https://gcc.gnu.org/install/index.html"> gcc(linux)</a>.
+3. For CPP, install <a href="https://gcc.gnu.org/install/index.html"> g++</a>.
 
 <h5>Without Input:</h5>
 
@@ -81,7 +81,7 @@ First install the compilers required.
         res.send(data);
     });    
 ```
-**Note:** For Windows g++ is required to compile, which is yet to add.
+**Note:**  GCC support is yet to add.
 <h5>With Input:</h5>
 
 ```javascript
@@ -95,7 +95,7 @@ First install the compilers required.
 ```
 
 ## Further Updates
-1. Have to add compilers for other languages - C, C++(Windows support).
+1. Have to add compilers for other languages - C, C++(GCC).
 2. Have to add Examples.
 
 ## Contributing
