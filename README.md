@@ -68,9 +68,34 @@ First install the compilers required.
         res.send(data);
     });
 ```
+3. For CPP, install <a href="https://gcc.gnu.org/install/index.html"> gcc(linux)</a>.
+
+<h5>Without Input:</h5>
+
+```javascript
+    //if windows 
+    var envData = { OS : "windows"}; 
+    //else
+    var envData = { OS : "linux" };
+    compiler.cppCompile( envData , code , function(data){
+        res.send(data);
+    });    
+```
+**Note:** For Windows g++ is required to compile, which is yet to add.
+<h5>With Input:</h5>
+
+```javascript
+    //if windows  
+    var envData = { OS : "windows"}; 
+    //else
+    var envData = { OS : "linux" };
+    compiler.cppcompileWithInput( envData , code , input ,  function(data){
+        res.send(data);
+    });
+```
 
 ## Further Updates
-1. Have to add compilers for other languages - C, C++.
+1. Have to add compilers for other languages - C, C++(Windows support).
 2. Have to add Examples.
 
 ## Contributing
