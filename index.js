@@ -56,13 +56,13 @@ executeWithInput = function(envData, code, input, fn)
     pythonCompiler.executeWithInput(envData, code, input, fn);
 }
 
-cppCompile = function ( envData ,  code , fn ){
+ccCompile = function ( envData ,  code , fn ){
 	if(exports.stats)
 		cppCompiler.stats = true;
 	cppCompiler.cppCompile(envData , code , fn );
 }
 
-cppcompileWithInput = function ( envData , code , input ,  fn ) { 
+ccCompileWithInput = function ( envData , code , input ,  fn ) { 
 	if(exports.stats)
 		cppCompiler.stats = true;
 	cppCompiler.cppcompileWithInput(envData , code , input , fn );	
@@ -73,5 +73,5 @@ exports.javaCompile = javaCompile;
 exports.compileWithInput = compileWithInput;
 exports.executePython = executePython;
 exports.executeWithInput = executeWithInput;
-exports.cppCompile = cppCompile;
-exports.cppcompileWithInput = cppcompileWithInput;
+exports.ccCompile = ccCompile;
+exports.ccCompileWithInput = ccCompileWithInput;
