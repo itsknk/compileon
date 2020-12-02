@@ -59,13 +59,13 @@ executeWithInput = function(envData, code, input, fn)
 ccCompile = function ( envData ,  code , fn ){
 	if(exports.stats)
 		cppCompiler.stats = true;
-	cppCompiler.cppCompile(envData , code , fn );
+	cppCompiler.ccCompile(envData , code , fn );
 }
 
 ccCompileWithInput = function ( envData , code , input ,  fn ) { 
 	if(exports.stats)
 		cppCompiler.stats = true;
-	cppCompiler.cppcompileWithInput(envData , code , input , fn );	
+	cppCompiler.ccCompileWithInput(envData , code , input , fn );	
 }
 
 exports.initialize = initialize;
