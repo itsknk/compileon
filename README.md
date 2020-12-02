@@ -68,35 +68,35 @@ First install the compilers required.
         res.send(data);
     });
 ```
-3. For CPP, install <a href="https://gcc.gnu.org/install/index.html"> g++</a>.
+3. For CPP and C, install <a href="https://gcc.gnu.org/install/index.html"> g++ </a> or <a href="https://gcc.gnu.org/"> gcc </a>.
 
 <h5>Without Input:</h5>
 
 ```javascript
     //if windows 
-    var envData = { OS : "windows"}; 
+    var envData = { OS : "windows", cmd: "gcc" or "g++"}; 
     //else
-    var envData = { OS : "linux" };
+    var envData = { OS : "linux", cmd: "gcc" or "g++"};
     compiler.cppCompile( envData , code , function(data){
         res.send(data);
     });    
 ```
-**Note:**  GCC support is yet to add.
+**Note:**  Can choose either gcc or g++.
 <h5>With Input:</h5>
 
 ```javascript
     //if windows  
-    var envData = { OS : "windows"}; 
+    var envData = { OS : "windows", cmd: "gcc" or "g++"}; 
     //else
-    var envData = { OS : "linux" };
+    var envData = { OS : "linux", cmd: "gcc" or "g++"};
     compiler.cppcompileWithInput( envData , code , input ,  function(data){
         res.send(data);
     });
 ```
 
 ## Further Updates
-1. Have to add compilers for other languages - C, C++(GCC).
-2. Have to add Examples.
+1. Have to add compilers for other languages - Golang.
+2. Have to add Example.
 
 ## Contributing
 - Fork it and then do the changes or else download the zip file, test to make sure nothing is going sideways.
